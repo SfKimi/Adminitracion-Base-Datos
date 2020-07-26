@@ -1,0 +1,81 @@
+CREATE TABLE proyecto.correo
+(
+  correo character varying(80) NOT NULL,
+  usuario character varying(80),
+  CONSTRAINT correo_pkey PRIMARY KEY (correo)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE proyecto.correo
+  OWNER TO "Admin";
+
+
+
+----------------------------------------------------------------------------------------------
+
+
+CREATE TABLE proyecto.telefono
+(
+  tel numeric(255,0) NOT NULL,
+  usuario character varying(80),
+  CONSTRAINT telefono_pkey PRIMARY KEY (tel)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE proyecto.telefono
+  OWNER TO "Admin";
+
+
+
+
+
+
+
+
+
+pruebas  con un video juego
+guarda  los datos enbase de datos mongo
+
+
+
+
+
+
+
+
+CREATE TABLE proyecto.telefono
+(
+  numero character varying(80) NOT NULL,
+  usuario character varying(80),
+  CONSTRAINT telefono_pkey PRIMARY KEY (numero)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE proyecto.telefono
+  OWNER TO "Admin";
+
+----------------------------------------------------------------------------------
+
+
+
+CREATE TABLE proyecto.usuario
+(
+  nombre character varying,
+  apellido character varying,
+  edad integer,
+  genero text,
+  usuario character varying(80) NOT NULL,
+  "contraseña" character varying,
+  CONSTRAINT usuario_pkey PRIMARY KEY (usuario)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE proyecto.usuario
+  OWNER TO "Admin";
+
+-------------------------------------------------------------------------------------------
+
